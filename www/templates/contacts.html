@@ -1,0 +1,17 @@
+<ion-view view-title="Contacts" hide-back-button="true">
+  <ion-content>
+
+    <div ng-repeat="c in contacts">
+      <span>Display Name: {{c.displayName}}</span>
+      <br />
+      <span>Phone Numbers:</span>
+      <br />
+      <div ng-repeat="p in c.phoneNumbers">
+        <span>{{p.type}}: {{p.value}}</span>
+      </div>
+      <br />
+      <hr>
+    </div>
+
+  </ion-content>
+</ion-view>

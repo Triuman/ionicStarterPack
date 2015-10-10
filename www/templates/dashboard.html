@@ -1,0 +1,16 @@
+<ion-view view-title="Dashboard"  hide-back-button="true">
+  <ion-content>
+    <h1>Dashboard</h1>
+
+    Username: {{loginData.username}}
+    <br />
+    Password: {{loginData.password}}
+    <br />
+    Login Date: {{loginData.loginDate | date :  "MM/dd/yyyy 'at' h:mma"}}
+    <br />
+    Device Model: {{device.model}}
+    <br />
+    Device Platform: {{device.platform}}
+
+  </ion-content>
+</ion-view>
